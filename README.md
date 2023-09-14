@@ -19,9 +19,9 @@ To install this module, run the following commands:
 	./Build test
 	./Build install
 
-Before run this script, you need install the following Perl Module:
+You can install the dependencies by run:
 
-    cpan Module::Build DBI DBD DBD::mysql Term::ReadKey Data::Dumper File::Slurp Try::Tiny LWP::UserAgent LWP::Protocol::https JSON Curses Curses::UI Getopt::Long Clone Chart::Gnuplot
+    ./Build installdeps
 
 Because it's cooperate with mysql/mariadb, you need to install and configure mysql/mariadb first.
 

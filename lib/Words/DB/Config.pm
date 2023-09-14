@@ -10,7 +10,7 @@ use Exporter qw(import);
 
 our @EXPORT = qw($config_file read_key);
 
-# check_sql();
+check_sql();
 my $config_dir = "$ENV{'HOME'}/.config/";
 my $config_file = $config_dir . "words";
 
