@@ -1,0 +1,34 @@
+#!/usr/bin/perl -w
+use 5.36.0;
+use utf8;
+use Getopt::Long;
+use Words::DB::Handler qw(cmd_translation);
+
+Main();
+
+sub Main {
+    GetOptions(
+        cmd  => \my $is_cmd,
+        help => \my $is_help
+    );
+
+    if ($is_cmd) {
+        cmd_translation();
+    } 
+    if ($is_help) {
+        help();
+    }
+    else {
+        eval {require Words::UI::CMD};
+    }
+}
+
+sub help {
+    my $help_message = <<"HELP";
+only two option:
+    
+    -help   help message
+    -cmd    not open the UI
+HELP
+    print $help_message;
+}

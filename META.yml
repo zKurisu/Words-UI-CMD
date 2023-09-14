@@ -1,0 +1,36 @@
+---
+abstract: 'turns baubles into trinkets'
+author:
+  - Jie
+build_requires:
+  Module::Build: '0.4234'
+configure_requires:
+  ExtUtils::MakeMaker: '0'
+  Module::Build: '0.28'
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 6.030, CPAN::Meta::Converter version 2.150010'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: Words-UI-CMD
+requires:
+  Chart::Gnuplot: '0.23'
+  Clone: '0.46'
+  Curses: '1.44'
+  Curses::UI: '0.9609'
+  DBD: '4.050'
+  DBI: '1.642'
+  Data::Dumper: '2.183'
+  File::Slurp: '9999.32'
+  Getopt::Long: '2.54'
+  JSON: '4.10'
+  LWP::Protocol::https: '6.11'
+  LWP::UserAgent: '6.72'
+  Module::Build: '0.4234'
+  Term::ReadKey: '2.38'
+  Try::Tiny: '0.31'
+version: '0.003'
+x_generated_by_perl: v5.38.0
+x_serialization_backend: 'YAML::Tiny version 1.73'
+x_spdx_expression: 'Artistic-1.0-Perl OR GPL-1.0-or-later'
